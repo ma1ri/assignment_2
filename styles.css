@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1200px;
+    margin: auto; 
+}
+
+
+.title-section{
+    text-align: left;
+}
+
+.title{
+    font-weight: 100;
+    font-size: 30px;
+
+}
+/* ************************************** */
+
+.history-section{
+    padding: 5px 0px;
+}
+
+.history-items{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.history-item{
+    margin: 3px;
+    position: relative;
+    transition: 1s;
+}
+
+.history-button{
+    background-color: #dddddd;
+}
+
+.history-button:focus{
+    outline-color: #17a2b8;
+}
+
+.remove-button{
+    position: absolute;
+    width: 15px; 
+    text-align: center;
+    border-radius: 5px;
+    border-style: solid;
+    display: none;
+    color: red;
+    background-color: #ffffff;
+    right: 0;
+    top:-10px;
+}
+.history-item:hover .remove-button{
+    display: block;
+}
+
+/* ************************************** */
+
+.search-section{
+    padding: 5px 0px;
+    margin-bottom: 10px;
+}
+
+.button-red:focus{
+    outline-color: #dc3545;
+}
+.button-green:focus{
+    outline-color:#1e7e34;
+}
+.button{
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+    margin: 2px;
+    border:none;
+}
+
+.button-red{
+    color: #fff;
+    background-color: #dc3545;
+}
+.search-word{
+    height: 29px;
+    padding: 1px 0px;
+    border:none;
+    border:1px solid;
+    margin-right: 2px;
+}
+
+.button-green{
+    color: #fff;
+    background-color: #218838;
+    /* margin-right: 2px; */
+}
+.search-items{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+/* *****************************/
+
+.gif-section{
+    border-top: 1px solid #dddddd;
+    margin-top: 10px;
+    padding: 10px 0px;
+}
+.gif-items{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gif-item{
+    margin: 0.5rem;
+    display: inline-block;
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+}
+
+
+img{
+    display: block;
+    border-style: none;
+}
+
+.gif-rating{
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/************ for responsive  *****************/
+
+@media all and (max-width: 1024px){
+    .container{
+        width: 100%;
+        padding: 0px 15px;
+    }
+   
+}
+
+
+@media all and (max-width: 425px) {
+    .search-items{
+        justify-content: center;
+    }
+
+    .history-items{
+        justify-content: center;
+    }
+    .title{
+        text-align: center;
+    }
+    .gif-items{
+        justify-content: center;
+    }
+   
+}
+
