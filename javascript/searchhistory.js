@@ -54,6 +54,8 @@ export class SearchHistory {
     _removeFunction(event, grandParent, word) {
         grandParent.removeChild(event.currentTarget.parentNode);
         localStorage.removeItem(word);
+        const gifItems = document.getElementsByClassName("gif-items")[0];
+        gifItems.textContent = "";
     }
 
 
